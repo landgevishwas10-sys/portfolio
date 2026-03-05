@@ -275,6 +275,30 @@
       align-items: center;
     }
 
+    .btn-resume {
+      padding: 0.9rem 2rem;
+      background: transparent;
+      border: 1px dashed rgba(240,237,232,0.3);
+      color: rgba(240,237,232,0.7);
+      border-radius: 6px;
+      text-decoration: none;
+      font-family: 'Syne', sans-serif;
+      font-weight: 600;
+      font-size: 0.9rem;
+      letter-spacing: 0.02em;
+      transition: all 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .btn-resume:hover {
+      border-color: var(--accent2);
+      color: var(--accent2);
+      background: rgba(0,229,255,0.05);
+      transform: translateY(-1px);
+    }
+
     .btn-primary {
       padding: 0.9rem 2rem;
       background: var(--accent);
@@ -820,6 +844,7 @@
     <div class="hero-actions fade-up delay-3">
       <a href="#work" class="btn-primary">See My Work →</a>
       <a href="#contact" class="btn-ghost">Let's Connect</a>
+      <a href="resume.pdf" download class="btn-resume">⬇ Download Resume</a>
     </div>
 
     <div class="hero-stats fade-up delay-4">
@@ -1507,7 +1532,7 @@
       <h2>Ready to <em>Scale</em><br>Your Brand?</h2>
       <p>Whether you're starting from zero or looking to break through a plateau — let's build something that actually moves the needle.</p>
       <div class="contact-btns">
-        <a href="mailto:landgevishwas10@gmail.com" class="btn-primary">📩 Email Me</a>
+        <a href="/cdn-cgi/l/email-protection#9af6fbf4fefdffecf3e9f2edfbe9abaadafdf7fbf3f6b4f9f5f7" class="btn-primary">📩 Email Me</a>
         <a href="https://wa.me/917977054003" target="_blank" class="btn-wa">💬 WhatsApp Me</a>
       </div>
     </div>
@@ -1520,14 +1545,14 @@
       <a href="#work">Work</a>
       <a href="#services">Services</a>
       <a href="#process">Process</a>
-      <a href="mailto:landgevishwas10@gmail.com">Email</a>
+      <a href="/cdn-cgi/l/email-protection#cba7aaa5afacaebda2b8a3bcaab8fafb8baca6aaa2a7e5a8a4a6">Email</a>
     </div>
   </footer>
 
   <!-- FLOATING WA -->
   <a href="https://wa.me/917977054003" target="_blank" class="wa-float" title="Chat on WhatsApp">💬</a>
 
-  <script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     function filterCards(category, btn) {
       // Update active tab
       document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
@@ -1554,11 +1579,4 @@
     }, { threshold: 0.1 });
 
     document.querySelectorAll('.brand-card, .service-card, .process-step').forEach(el => {
-      el.style.opacity = '0';
-      el.style.transform = 'translateY(20px)';
-      el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-      observer.observe(el);
-    });
-  </script>
-</body>
-</html>
+      e
